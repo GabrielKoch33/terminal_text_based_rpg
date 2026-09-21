@@ -26,6 +26,7 @@ public class Sessao {
         int opcao;
         String nome;
 
+
         System.out.println(AMARELO + "***Sons de despertados apitando***" + RESET);
         System.out.println("-> Q-Que horas são?!? Só 7 AM? Poxa, hoje é sábado, esqueci de configurar o despertador...");
         System.out.println("-> Mas nossa, que noite boa! Cheguei até a sonhar...");
@@ -56,7 +57,7 @@ public class Sessao {
         Inventario mochila = player.getInventario();
 
         ler.nextLine();
-        System.out.println("-> Ah é verdade, foi com isso! Eu era um " + player.getClassePlayer() + "!");
+        System.out.println("-> Ah é verdade, foi com isso! Eu era um "+player.getClassePlayer()+"!");
         System.out.print("-> As pessoas daquele sonho me chamavam de: ");
 
         while (true) {
@@ -69,36 +70,35 @@ public class Sessao {
             break;
         }
 
-        String formatNome = "[" + player.getNome() + "]";
+        String formatNome = "["+player.getNome()+"]";
         String formatNPC = "[NPC]";
 
-        System.out.println(formatNome + ", afinal esse é meu nome HAHAHA");
-        System.out.println("-> Minha mãe saiu para ir no salão ou algo assim, não lembro, enfim, ela me deu R$" +
-                player.getDinheiro() + ", preciso ir na feira comprar umas coisas para o almoço");
-        System.out.println(formatNome + "Mas antes, vou pegar algo na geladeira para comer enquanto caminho");
-        System.out.println(formatNome + "Também não posso esquecer do meu guarda-chuva, ouvi dizer que vai cair um toró!");
-
-        if (mochila.guardarItem(fruta) && mochila.guardarItem(guardaChuva)) {
-            System.out.println("-> " + fruta.getNome() + " e " + guardaChuva.getNome() + " foram adicionados ao inventário!");
-        } else {
-            System.out.println("-> Não foi possível guardar a/o " + fruta.getNome() + ", libere espaço");
-        }
-
-        System.out.println(AMARELO + "**No caminho para a feirinha**" + RESET);
-        MonstroBase goblin = new MonstroBase("Goblin Vingativo", "Goblin", false);
-        String formatGoblin = "[" + goblin.getNomeMonstro() + "]";
-
-        System.out.println(formatNPC + "Alguém me ajude, por favor!");
-        System.out.println(formatNome + "Ei! Deixe essa moça em paz!");
-        System.out.println(formatGoblin + "Goblin querer vingança, mulher xingar goblin GRAAHHHH");
-
         while (player.isAlive()) {
+            System.out.println(formatNome+", afinal esse é meu nome HAHAHA");
+            System.out.println("-> Minha mãe saiu para ir no salão ou algo assim, não lembro, enfim, ela me deu R$" +
+                    player.getDinheiro()+", preciso ir na feira comprar umas coisas para o almoço");
+            System.out.println(formatNome+"Mas antes, vou pegar algo na geladeira para comer enquanto caminho");
+            System.out.println(formatNome+"Também não posso esquecer do meu guarda-chuva, ouvi dizer que vai cair um toró!");
+
+            if (mochila.guardarItem(fruta) && mochila.guardarItem(guardaChuva)) {
+                System.out.println("-> "+fruta.getNome()+" e "+guardaChuva.getNome()+" foram adicionados ao inventário!");
+            } else {
+                System.out.println("-> Não foi possível guardar a/o "+fruta.getNome()+", libere espaço");
+            }
+
+            System.out.println(AMARELO + "**No caminho para a feirinha**" + RESET);
+            MonstroBase goblin = new MonstroBase("Goblin Vingativo", "Goblin", false);
+            String formatGoblin = "["+goblin.getNomeMonstro()+"]";
+
+            System.out.println(formatNPC+"Alguém me ajude, por favor!");
+            System.out.println(formatNome+"Ei! Deixe essa moça em paz!");
+            System.out.println(formatGoblin+"Goblin querer vingança, mulher xingar goblin GRAAHHHH");
+
             while (player.isAlive() && goblin.isAlive()) {
                 if (player.getAtributos().getAgilidade() > goblin.getAtributos().getAgilidade()) {
                     break; // FINALIZAR
                 }
             }
-            player.setAlive(false);
         }
     }
-}// plot final: era uma criança sonhando em ser um adulto num mundo de rpg
+}
