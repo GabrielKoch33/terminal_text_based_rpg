@@ -6,7 +6,7 @@ import java.util.List;
 public class Inventario {
     private int tamanhoAtual;
     private int pesoAtual;
-    private List<Item> inventario;
+    private final List<Item> inventario;
 
     public Inventario() {
         this.inventario = new ArrayList<>();
