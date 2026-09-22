@@ -1,5 +1,8 @@
 package org.gabriel.classesMecanicas;
-
+/**
+ * Atributos definirão os valores padrões dos campos, os mesmo não servem para
+ * armazenar a vida atual ou quaisquer valores mutáveis.
+ * **/
 public class Atributos {
     private int vitalidade;
     private int dano;
