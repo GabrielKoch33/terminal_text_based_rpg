@@ -3,9 +3,9 @@ package org.gabriel.classesMecanicas;
 import java.util.List;
 
 public class Menus {
-    private final int repeat = 30;
+    private static final int repeat = 30;
 
-    public void exibirInventario(Inventario inventario) {
+    static void exibirInventario(Inventario inventario) {
         if (inventario.estaVazio()) {
             System.out.println("Inventário vazio, nada para exibir!");
         } else {
@@ -20,7 +20,7 @@ public class Menus {
         }
     }
 
-    public void exibirLoja(Loja loja) {
+    static void exibirLoja(Loja loja) {
         if (loja.estaVazia()) {
             System.out.println("Loja vazia, nada para exibir!");
         } else {
@@ -35,7 +35,7 @@ public class Menus {
         }
     }
 
-    public void menuInventario() {
+    static void menuInventario() {
         System.out.println("-".repeat(repeat));
         System.out.println("[1] - DESCARTAR ITEM");
         System.out.println("[2] - USAR ITEM");
@@ -43,7 +43,7 @@ public class Menus {
         System.out.println("-".repeat(repeat));
     }
 
-    public void menuLoja() {
+    static void menuLoja() {
         System.out.println("-".repeat(repeat));
         System.out.println("[1] - VENDER ITEM");
         System.out.println("[2] - COMPRAR ITEM");
@@ -51,14 +51,14 @@ public class Menus {
         System.out.println("-".repeat(repeat));
     }
 
-    public void menuDialogo() {
+    static void menuDialogo() {
         System.out.println("-".repeat(repeat));
         System.out.println("[1] - PULAR DIÁLOGO");
         System.out.println("[2] - CONTINUAR LENDO");
         System.out.println("-".repeat(repeat));
     }
 
-    public void menuCombate() {
+    static void menuCombate() {
         System.out.println("-".repeat(repeat));
         System.out.println("[1] - ATACAR");
         System.out.println("[2] - ESQUIVAR");
