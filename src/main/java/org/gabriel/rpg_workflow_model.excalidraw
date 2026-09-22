@@ -3464,12 +3464,7 @@
       "version": 81,
       "versionNonce": 603749568,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "5YoNpELweE0ClAehmX1vH",
-          "type": "arrow"
-        }
-      ],
+      "boundElements": [],
       "updated": 1790088811159,
       "created": 1790088749589,
       "link": null,
@@ -5563,7 +5558,7 @@
       "version": 45,
       "versionNonce": 1312308489,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1790097074167,
       "link": null,
       "locked": false,
@@ -5602,7 +5597,7 @@
       "version": 91,
       "versionNonce": 703093991,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1790096999199,
       "link": null,
       "locked": false,
@@ -5685,7 +5680,7 @@
       "version": 77,
       "versionNonce": 1731332809,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1790097021424,
       "link": null,
       "locked": false,
@@ -5731,7 +5726,7 @@
       "version": 53,
       "versionNonce": 1840818505,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1790097020144,
       "link": null,
       "locked": false,
@@ -5775,7 +5770,7 @@
       "version": 118,
       "versionNonce": 1044485865,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1790097163972,
       "link": null,
       "locked": false,
@@ -5825,6 +5820,496 @@
       "originalText": "NÃO -> \nREMOVE ITEM AUTOMÁTICAMENTE",
       "autoResize": false,
       "lineHeight": 1.25
+    },
+    {
+      "id": "YLUETJbsRSNfmVUMIbWqj",
+      "type": "rectangle",
+      "x": -2657.0188666449667,
+      "y": 13819.30100128564,
+      "width": 1216.6666666666665,
+      "height": 1820,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGb",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1140051129,
+      "version": 208,
+      "versionNonce": 1689766647,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "rfosLUI3GU-brWicY8WSK",
+      "type": "rectangle",
+      "x": -2588.6855333116328,
+      "y": 13910.134334618979,
+      "width": 1094.999999999999,
+      "height": 1297.5000000000014,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGc",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 959460631,
+      "version": 425,
+      "versionNonce": 1334924311,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "8HKcklFn5v-cN4PEp42-X",
+      "type": "text",
+      "x": -2519.5188666449667,
+      "y": 13945.134334618975,
+      "width": 505.58392333984375,
+      "height": 45,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGd",
+      "roundness": null,
+      "seed": 1425491385,
+      "version": 182,
+      "versionNonce": 1956428087,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false,
+      "text": "EXIBIÇÃO DE INVENTÁRIO",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "EXIBIÇÃO DE INVENTÁRIO",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "DGs4bzhjXKodSGMQYyNfR",
+      "type": "text",
+      "x": -2497.0188666449667,
+      "y": 14037.634334618975,
+      "width": 770.8316650390625,
+      "height": 135,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGe",
+      "roundness": null,
+      "seed": 1539887289,
+      "version": 257,
+      "versionNonce": 1765702231,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false,
+      "text": "ID -- PRODUTO -- CAMPO_1 -- CAMPO_2\n1   --    espada   -- xxxxxxxx -- yyyyyyyyy\n2  --    poção     -- zzzzzzzz -- sssssssss ",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "ID -- PRODUTO -- CAMPO_1 -- CAMPO_2\n1   --    espada   -- xxxxxxxx -- yyyyyyyyy\n2  --    poção     -- zzzzzzzz -- sssssssss ",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "A60ZmKsECEfyASy0wOYrt",
+      "type": "rectangle",
+      "x": -2539.5188666449667,
+      "y": 13935.134334618975,
+      "width": 935.0000000000001,
+      "height": 322.5,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGf",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 593025367,
+      "version": 190,
+      "versionNonce": 575346551,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "nGOU8d2MvQQFGRG4aGgdU",
+      "type": "rectangle",
+      "x": -2539.5188666449667,
+      "y": 14290.134334618975,
+      "width": 934.9999999999999,
+      "height": 415,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGg",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 2034635001,
+      "version": 132,
+      "versionNonce": 101126295,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "_NcEWXAyZHMA2PjKnK4Jj",
+      "type": "text",
+      "x": -2514.5188666449667,
+      "y": 14312.634334618975,
+      "width": 895.3479003906251,
+      "height": 360,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGh",
+      "roundness": null,
+      "seed": 1048361273,
+      "version": 339,
+      "versionNonce": 1042736567,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false,
+      "text": "Informe o ID do item:\n\nindice = ler(opcao válida)\nitem = lista.get(indice)\noperacaoComItem(item)\n\n# usuário informa um índice, acessamos o índice e\nretornamos o Item na posição definida",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Informe o ID do item:\n\nindice = ler(opcao válida)\nitem = lista.get(indice)\noperacaoComItem(item)\n\n# usuário informa um índice, acessamos o índice e\nretornamos o Item na posição definida",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "i69sl8u3Z4yPjaNteZeIC",
+      "type": "rectangle",
+      "x": -2537.0188666449667,
+      "y": 14742.634334618975,
+      "width": 937.4999999999998,
+      "height": 390,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGi",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1674550041,
+      "version": 179,
+      "versionNonce": 1238308567,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "R7DsoAxEEziOHJm828_0l",
+      "type": "text",
+      "x": -2514.5188666449667,
+      "y": 14792.634334618975,
+      "width": 898.2717895507812,
+      "height": 180,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bGj",
+      "roundness": null,
+      "seed": 104639737,
+      "version": 365,
+      "versionNonce": 1335108599,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790100643265,
+      "link": null,
+      "locked": false,
+      "text": "guardarItem(), comprarItem(), descartarItem()\ne quaisquer operações que trabalhem com manipu-\nlação de inventário, loja ou lista trabalhará com \nesse modelo: Lê id -> acessa indice -> retorna Item",
+      "fontSize": 36,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "guardarItem(), comprarItem(), descartarItem()\ne quaisquer operações que trabalhem com manipu-\nlação de inventário, loja ou lista trabalhará com \nesse modelo: Lê id -> acessa indice -> retorna Item",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "1-5OWHpxpdRsmo2SCtB0N",
+      "type": "freedraw",
+      "x": 888.3144666883686,
+      "y": 16482.96766795231,
+      "width": 134,
+      "height": 112,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bHL",
+      "roundness": null,
+      "seed": 88955927,
+      "version": 40,
+      "versionNonce": 728730263,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1790102906046,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          16,
+          20
+        ],
+        [
+          20,
+          24
+        ],
+        [
+          22,
+          26
+        ],
+        [
+          22,
+          28
+        ],
+        [
+          24,
+          30
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          30,
+          34
+        ],
+        [
+          30,
+          36
+        ],
+        [
+          32,
+          36
+        ],
+        [
+          34,
+          32
+        ],
+        [
+          38,
+          28
+        ],
+        [
+          42,
+          22
+        ],
+        [
+          52,
+          14
+        ],
+        [
+          60,
+          6
+        ],
+        [
+          70,
+          -6
+        ],
+        [
+          78,
+          -16
+        ],
+        [
+          90,
+          -28
+        ],
+        [
+          98,
+          -36
+        ],
+        [
+          104,
+          -42
+        ],
+        [
+          108,
+          -46
+        ],
+        [
+          110,
+          -50
+        ],
+        [
+          114,
+          -54
+        ],
+        [
+          116,
+          -56
+        ],
+        [
+          118,
+          -58
+        ],
+        [
+          122,
+          -62
+        ],
+        [
+          124,
+          -64
+        ],
+        [
+          126,
+          -68
+        ],
+        [
+          130,
+          -70
+        ],
+        [
+          132,
+          -74
+        ],
+        [
+          134,
+          -74
+        ],
+        [
+          134,
+          -76
+        ],
+        [
+          134,
+          -76
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        134,
+        -76
+      ]
     }
   ],
   "appState": {

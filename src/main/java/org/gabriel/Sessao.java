@@ -1,11 +1,14 @@
 package org.gabriel;
 
+import org.gabriel.classesMecanicas.Menus;
 import org.gabriel.classesMecanicas.Inventario;
 import org.gabriel.classesMecanicas.Item;
 import org.gabriel.classesMecanicas.Loja;
 import org.gabriel.classesMonstros.MonstroBase;
 import org.gabriel.classesPersonagens.*;
 
+import java.awt.*;
+import java.util.List;
 import java.util.Scanner;
 
 public class Sessao {
@@ -19,7 +22,12 @@ public class Sessao {
     public static final String BRANCO = "\u001B[37";
     public static final String RESET = "\u001B[0m";
 
+    private static boolean validaInput(List<Item> listaRef, int escolha) {
+        return escolha < 0 || escolha >= listaRef.size();
+    }
+
     public static void main(String[] args) {
+        Loja loja = new Loja();
         Item fruta = new Item("Maçã", "Uma deliciosa fruta fresca", Item.itemTipos.CURA, 1, 15);
         Item guardaChuva = new Item("Guarda-Chuva", "Um guarda-chuva bem pontudo", Item.itemTipos.ARMA, 5, 20);
         Scanner ler = new Scanner(System.in);
@@ -53,7 +61,6 @@ public class Sessao {
             case 4 -> new Arqueiro(CIANO + "Arqueiro" + RESET);
             default -> null;
         };
-        Inventario mochila = player.getInventario();
 
         ler.nextLine();
         System.out.println("-> Ah é verdade, foi com isso! Eu era um "+player.getClassePlayer()+"!");
@@ -79,7 +86,7 @@ public class Sessao {
             System.out.println(formatNome+"Mas antes, vou pegar algo na geladeira para comer enquanto caminho");
             System.out.println(formatNome+"Também não posso esquecer do meu guarda-chuva, ouvi dizer que vai cair um toró!");
 
-            if (mochila.guardarItem(fruta) && mochila.guardarItem(guardaChuva)) {
+            if (player.guardarItem(fruta) && player.guardarItem(guardaChuva)) {
                 System.out.println("-> "+fruta.getNome()+" e "+guardaChuva.getNome()+" foram adicionados ao inventário!");
             } else {
                 System.out.println("-> Não foi possível guardar a/o "+fruta.getNome()+", libere espaço");
@@ -92,12 +99,14 @@ public class Sessao {
             System.out.println(formatNPC+"Alguém me ajude, por favor!");
             System.out.println(formatNome+"Ei! Deixe essa moça em paz!");
             System.out.println(formatGoblin+"Goblin querer vingança, mulher xingar goblin GRAAHHHH");
-
             while (player.isAlive() && goblin.isAlive()) {
-                if (player.getAtributos().getAgilidade() > goblin.getAtributos().getAgilidade()) {
-                    break; // FINALIZAR
-                }
-            }
+                /* if (vez == player) {
+               Menus.menuCombate()
+               switch(opcao escolhida)
+                   case x
+                   case y
+               */ }
+            break;
         }
     }
 }

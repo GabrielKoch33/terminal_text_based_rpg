@@ -4,6 +4,8 @@ import org.gabriel.classesMecanicas.Atributos;
 import org.gabriel.classesMecanicas.Inventario;
 import org.gabriel.classesMecanicas.Item;
 
+import java.util.List;
+
 public class PersonagemBase {
     protected String nomePlayer;
     protected double dinheiro;
@@ -27,6 +29,14 @@ public class PersonagemBase {
         this.classePlayer = classe;
         this.cenarioAtual = Cenario.DIALOGO;
         this.isAlive = true;
+    }
+
+    public boolean guardarItem(Item item) {
+        return this.inventario.guardarItem(item);
+    }
+
+    public boolean temItensInventario() {
+        return this.inventario.estaVazio();
     }
 
     public boolean temDinheiro(Item item) {
@@ -86,8 +96,8 @@ public class PersonagemBase {
         return classePlayer;
     }
 
-    public Inventario getInventario() {
-        return inventario;
+    public List<Item> getInventario() {
+        return List.copyOf(this.inventario.getInventario());
     }
 
     public Atributos getAtributos() {

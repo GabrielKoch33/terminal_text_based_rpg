@@ -20,6 +20,11 @@ public class Inventario {
         }
         return false;
     }
+
+    public Item retornaItem(int indexEscolhido) {
+        return this.inventario.get(indexEscolhido);
+    }
+
     /**Esse método é quando o usuário intencionalmente decide descartar um item*/
     public boolean descartarItemSelecionado(int index) {
         if ((index < 0 || index >= this.inventario.size()) || this.inventario.get(index).isDefault()) {

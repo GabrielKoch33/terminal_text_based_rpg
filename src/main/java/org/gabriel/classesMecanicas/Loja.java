@@ -5,11 +5,10 @@ import java.util.List;
 import java.util.Map;
 
 public class Loja {
-    /**
-    * Sempre declaramos a generalização (List), depois inicializamos a especificação (ArrayList, LinkedList, ...)
-    **/
     private final List<Item> loja;
-
+    /**
+     * Sempre declaramos a generalização (List), depois inicializamos a especificação (ArrayList, LinkedList, ...)
+     **/
     public Loja() {
         this.loja = new ArrayList<>();
     }
@@ -21,14 +20,9 @@ public class Loja {
     public Item removeItemEstoque(int index){
         return loja.remove(index);
     }
-    /**
-    * Retorna um objeto para que métodos do inventário guardem o item
-    **/
-    public Item pegaItemDaLoja(int index) {
-        if (index < 0 || index >= loja.size()) {
-            return null;
-        }
-        return loja.get(index);
+
+    public Item retornaItem(int indexEscolhido) {
+        return this.loja.get(indexEscolhido);
     }
 
     public boolean estaVazia(){
