@@ -26,7 +26,6 @@ public class Sessao {
         int opcao;
         String nome;
 
-
         System.out.println(AMARELO + "***Sons de despertados apitando***" + RESET);
         System.out.println("-> Q-Que horas são?!? Só 7 AM? Poxa, hoje é sábado, esqueci de configurar o despertador...");
         System.out.println("-> Mas nossa, que noite boa! Cheguei até a sonhar...");

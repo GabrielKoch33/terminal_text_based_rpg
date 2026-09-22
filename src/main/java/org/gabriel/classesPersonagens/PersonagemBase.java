@@ -8,11 +8,11 @@ public class PersonagemBase {
     protected String nomePlayer;
     protected double dinheiro;
     protected String classePlayer;
+    protected int vidaAtual;
     protected boolean isAlive;
     protected Inventario inventario;
     protected Atributos atributos;
     protected Cenario cenarioAtual;
-    protected int MAXLIFE;
 
     public enum Cenario {
         LOJA,
@@ -57,8 +57,6 @@ public class PersonagemBase {
     }
 
     public void tomarDano(int danoInimigo) {
-        // Não se pode usar -=, --, += ou ++ diretamente em retorno de métodos getters,
-        // até porque essa sintaxe necessita de uma variável à esquerda
         int vidaReduzida = this.atributos.getVitalidade() - danoInimigo;
         if (vidaReduzida > 0) {
             this.atributos.setVitalidade(vidaReduzida);
@@ -68,9 +66,12 @@ public class PersonagemBase {
         }
     }
 
+    public boolean isAlive() {
+        return isAlive;
+    }
 
-    public int getMAXLIFE() {
-        return MAXLIFE;
+    public int getVidaAtual() {
+        return vidaAtual;
     }
 
     public String getNome() {
@@ -83,10 +84,6 @@ public class PersonagemBase {
 
     public String getClassePlayer() {
         return classePlayer;
-    }
-
-    public boolean isAlive() {
-        return isAlive;
     }
 
     public Inventario getInventario() {

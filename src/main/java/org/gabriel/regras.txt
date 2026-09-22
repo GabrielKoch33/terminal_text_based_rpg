@@ -21,9 +21,6 @@ PERSONAGENS (HERÓIS):
     -> MÉTODOS:
 
 
-
-
-
 PERSONAGENS (INIMIGOS):
     ->REGRAS:
         - Todas as classes de inimigos herdam os atributos da classe MonstroBase
@@ -37,8 +34,6 @@ PERSONAGENS (INIMIGOS):
 
     -> MÉTODOS:
 
-
-    -
 Itens
     ->REGRAS:
      - O tipo do item define se são de ataque físico ou mágico

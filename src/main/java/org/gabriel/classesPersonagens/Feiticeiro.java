@@ -7,5 +7,6 @@ public class Feiticeiro extends PersonagemBase {
     public Feiticeiro(String classe ) {
         super(classe);
         this.atributos = new Atributos(classe);
-        this.MAXLIFE = this.atributos.getVitalidade();    }
+        this.vidaAtual = this.atributos.getVitalidade();
+    }
 }
