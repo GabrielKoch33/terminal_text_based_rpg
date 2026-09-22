@@ -11,6 +11,16 @@ public class Item {
     private int dano;
     private int cura;
 
+    @Override
+    public String toString() {
+        return "Nome:"+nome+"| Desc:"+descricao+" | Tipo: "+tipo+" | Peso: "+peso+" | Preço: "+preco+" | Num.Usos: "+numeroDeUsos+" | Padrão: "+isDefault+" | Dano: "+dano+" | Cura: "+cura;
+    }
+
+    public enum itemTipos {
+        CURA,
+        ARMA
+    }
+
     /**Itens de uso ilimitado e defaults*/
     public Item (String nome, String descricao, itemTipos tipo, int peso,int valor) {
         this.nome = nome;
@@ -34,9 +44,8 @@ public class Item {
         this.isDefault = isDefault;
     }
 
-    public enum itemTipos {
-        CURA,
-        ARMA
+    public boolean temUsos() {
+        return this.numeroDeUsos > 0;
     }
 
     public void decresceUsoItem(Item item) {

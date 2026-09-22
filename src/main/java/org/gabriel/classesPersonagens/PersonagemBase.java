@@ -56,11 +56,6 @@ public class PersonagemBase {
         return dado1 == 7;
     }
 
-    // Avaliando possível necessidade desse método
-    public void abrirInventario () {
-        this.inventario.exibirInventario();
-    }
-
     public void tomarDano(int danoInimigo) {
         // Não se pode usar -=, --, += ou ++ diretamente em retorno de métodos getters,
         // até porque essa sintaxe necessita de uma variável à esquerda

@@ -1,54 +1,50 @@
 package org.gabriel.classesMecanicas;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Loja {
-    /**Integer: será como um índice do item, uma forma rápida de acessar o item desejado. <br>
-     * Item: ao escolher um índice iremos escrever um quadro com Nome, Descrição entre outras informações úteis.
-     * <br><br>
-     * Como boa prática e legibilidade, iniciamos a variável como Map, depois instânciamos como HashMap**/
-    private final Map<Integer, Item> estoque;
-    private int ultimaChaveCriada = 1;
+    /**
+    * Sempre declaramos a generalização (List), depois inicializamos a especificação (ArrayList, LinkedList, ...)
+    **/
+    private List<Item> loja;
 
     public Loja() {
-        this.estoque = new HashMap<>();
+        this.loja = new ArrayList<>();
     }
 
-    /** Java por debaixo dos panos converte int -> Integer dessa forma:<br>
-     this.estoque.put(Integer.valueOf(this.ultimaChaveCriada), item);
-     **/
-    public Item adicionaItemEstoque(Item item) {
-        this.estoque.put(this.ultimaChaveCriada, item);
-        this.ultimaChaveCriada++;
-        return item;
-    }
-
-    /**Em Sets, o método '.remove()' retorna um boolean. <br>
-     * Já em Maps ou Lists, o retorno é o próprio Objeto (ou null caso a chave não exista).<br>
-     * O parâmetro passado para o remove é a chave, o retorno do remove() é o valor associado.**/
-    public Item removeItemEstoque(int id){
-        return estoque.remove(id);
+    public void adicionaItemEstoque(Item item) {
+        this.loja.add(item);
     }
 
     /**
-     * Retorna um objeto para que métodos do inventário guardem o item
-     * */
-    public Item pegaItemDaLoja(int id) {
-        if (!estaVazia() && contemItem(id)) {
-            return estoque.get(id);
+    * Em Sets, o método '.remove()' retorna um boolean. <br>
+    * Já em Maps ou Lists, o retorno é o próprio Objeto (ou null caso a chave não exista).<br>
+    * O parâmetro passado para o remove é a chave, o retorno do remove() é o valor associado.
+    **/
+    public Item removeItemEstoque(int index){
+        return loja.remove(index);
+    }
+    /**
+    * Retorna um objeto para que métodos do inventário guardem o item
+    **/
+    public Item pegaItemDaLoja(int index) {
+        if (index < 0 || index >= loja.size()) {
+            return null;
         }
-        return null;
+        return loja.get(index);
     }
 
     public boolean estaVazia(){
-        return getEstoque().isEmpty();
+        return this.loja.isEmpty();
     }
 
-    public boolean contemItem(int id){
-        return this.estoque.containsKey(id);
+    public boolean contemItem(Item item){
+        return this.loja.contains(item);
     }
 
-    public Map<Integer, Item> getEstoque() {
-        return estoque;
+    public List<Item> getLoja() {
+        return List.copyOf(this.loja);
     }
 }
