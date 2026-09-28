@@ -1,15 +1,12 @@
 package org.gabriel;
 
-import org.gabriel.classesMecanicas.Menus;
-import org.gabriel.classesMecanicas.Inventario;
-import org.gabriel.classesMecanicas.Item;
-import org.gabriel.classesMecanicas.Loja;
+import org.gabriel.classesMecanicas.*;
 import org.gabriel.classesMonstros.MonstroBase;
 import org.gabriel.classesPersonagens.*;
 
 import java.awt.*;
+import java.util.*;
 import java.util.List;
-import java.util.Scanner;
 
 public class Sessao {
     public static final String PRETO = "\u001B[30m";
@@ -31,6 +28,9 @@ public class Sessao {
         Item fruta = new Item("Maçã", "Uma deliciosa fruta fresca", Item.itemTipos.CURA, 1, 15);
         Item guardaChuva = new Item("Guarda-Chuva", "Um guarda-chuva bem pontudo", Item.itemTipos.ARMA, 5, 20);
         Scanner ler = new Scanner(System.in);
+        PriorityQueue<Combatente> combatentes = new PriorityQueue<>(
+                Comparator.comparingInt(Combatente::getAgilidade).reversed()
+        );
         int opcao;
         String nome;
 
@@ -100,12 +100,9 @@ public class Sessao {
             System.out.println(formatNome+"Ei! Deixe essa moça em paz!");
             System.out.println(formatGoblin+"Goblin querer vingança, mulher xingar goblin GRAAHHHH");
             while (player.isAlive() && goblin.isAlive()) {
-                /* if (vez == player) {
-               Menus.menuCombate()
-               switch(opcao escolhida)
-                   case x
-                   case y
-               */ }
+                combatentes.add(goblin);
+                combatentes.add(player);
+            }
             break;
         }
     }

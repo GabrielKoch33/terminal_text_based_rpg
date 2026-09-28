@@ -1,12 +1,13 @@
 package org.gabriel.classesPersonagens;
 
 import org.gabriel.classesMecanicas.Atributos;
+import org.gabriel.classesMecanicas.Combatente;
 import org.gabriel.classesMecanicas.Inventario;
 import org.gabriel.classesMecanicas.Item;
 
 import java.util.List;
 
-public class PersonagemBase {
+public class PersonagemBase implements Combatente {
     protected String nomePlayer;
     protected double dinheiro;
     protected String classePlayer;
@@ -134,6 +135,11 @@ public class PersonagemBase {
 
     public void setCenarioAtual(Cenario cenarioAtual) {
         this.cenarioAtual = cenarioAtual;
+    }
+
+    @Override
+    public int getAgilidade() {
+        return this.atributos.getAgilidade();
     }
 }
 

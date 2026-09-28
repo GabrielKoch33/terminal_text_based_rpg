@@ -1,8 +1,9 @@
 package org.gabriel.classesMonstros;
 
 import org.gabriel.classesMecanicas.Atributos;
+import org.gabriel.classesMecanicas.Combatente;
 
-public class MonstroBase {
+public class MonstroBase implements Combatente {
     protected String nomeMonstro;
     protected String classe;
     protected Atributos atributos;
@@ -46,5 +47,10 @@ public class MonstroBase {
 
     public void setAlive(boolean alive) {
         isAlive = alive;
+    }
+
+    @Override
+    public int getAgilidade() {
+        return this.atributos.getAgilidade();
     }
 }
